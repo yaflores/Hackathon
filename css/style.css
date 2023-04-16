@@ -1,0 +1,59 @@
+h1, h2, h3, h4, h5, h6, p, ul, li {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+ul, li {
+    list-style: none; /* remove the bullet points */
+}
+* {
+    box-sizing: border-box; /* invert the box model */
+}
+img {
+    vertical-align: top; /* eliminate the 1px space below the image */
+}
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+body {
+    /* background: yellow; */
+    font-family: 'Roboto', sans-serif;
+}
+@media (min-width:700px) {
+    body {
+        /* background-color: orange; */
+    }
+    .container, .overlay-container {
+        width: 800px;
+    }
+} /* end of tablet */
+
+@media (min-width:1000px) {
+    body {
+        /* background-color: red; */
+    }
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .overlay-container {
+        width: 1000px;
+    }
+    header {
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+} /* end of laptop */
+
+@media (min-width:1200px) {
+    body {
+        /* background-color: violet; */
+    }
+    .container {
+        width: 1000px;
+    }
+    .overlay-container {
+        width: 1200px;
+    }
+} /* end of desktop */
